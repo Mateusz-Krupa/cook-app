@@ -1,19 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom'
+import MainNavigation from './components/MainNavigation/MainNavigation';
+import Delivery from './pages/Delivery';
+import Ingredients from './pages/Ingredients';
+import Recipe from './pages/Recipe';
+import Basket from './pages/Basket';
+
+// import { Link } from 'react-router-dom'
 import './App.css';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Router>
+        <div>
+          <MainNavigation />
+          <Route path="/delivery" component={Delivery} />
+          <Route path="/ingredients" component={Ingredients} />
+          <Route path="/ingredients/id" component={Ingredients} />          
+          <Route path="/recipes/:id" component={Recipe} />
+          <Route path="/recipes" component={Recipe} />
+          <Route path="/basket" component={Basket} />
+        </div>
+      </Router>
     );
   }
 }
