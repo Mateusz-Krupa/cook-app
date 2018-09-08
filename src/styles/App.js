@@ -2,7 +2,8 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   'App': {
-    'textAlign': 'center'
+    'textAlign': 'center',
+    'fontFamily': ''Roboto', sans-serif'
   },
   'AppPageContainer': {
     'paddingTop': [{ 'unit': 'px', 'value': 50 }]
