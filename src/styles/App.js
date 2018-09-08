@@ -6,7 +6,7 @@ export default StyleSheet.create({
     'fontFamily': ''Roboto', sans-serif'
   },
   'AppPageContainer': {
-    'paddingTop': [{ 'unit': 'px', 'value': 50 }]
+    'padding': [{ 'unit': 'px', 'value': 50 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 60 }, { 'unit': 'px', 'value': 0 }]
   },
   'addButton': {
     'width': [{ 'unit': 'px', 'value': 60 }],

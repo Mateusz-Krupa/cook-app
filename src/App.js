@@ -4,7 +4,7 @@ import {
   Route
 } from 'react-router-dom'
 import MainNavigation from './components/MainNavigation/MainNavigation';
-import Delivery from './pages/Delivery';
+import Delivery from './pages/Delivery/Delivery';
 import Ingredients from './pages/Ingredients/Ingredients';
 import Recipe from './pages/Recipe/Recipe';
 import Basket from './pages/Basket/Basket';
