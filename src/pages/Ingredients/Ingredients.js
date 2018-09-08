@@ -44,7 +44,7 @@ export  default class Ingredients extends Component {
       <div>
         <TopBar> Ingredients </TopBar> 
         <div className="addButton">
-          <i class="fas fa-plus"></i>
+          <i className="fas fa-plus"></i>
         </div> 
         <div>
         { 
@@ -53,7 +53,7 @@ export  default class Ingredients extends Component {
             <div>{item.name} </div> 
             <div>
               <span> {item.quantity}  {item.measure}</span>
-              <span className="ingredients-list-next"> <i class="fas fa-chevron-right"></i> </span> 
+              <span className="ingredients-list-next"> <i className="fas fa-chevron-right"></i> </span> 
             </div>
           </div>
           ))

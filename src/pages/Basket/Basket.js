@@ -10,7 +10,7 @@ export default class Delivery extends Component {
       <div>
         <TopBar> Basket </TopBar> 
         <DataTable></DataTable>
-        <div> Total price: 200 CHF</div> 
+        <div className="basket-total-price"> Total price: <span>200 CHF</span></div> 
         <div className="basket-button"> 
           <Button>Buy and approve</Button>
         </div>

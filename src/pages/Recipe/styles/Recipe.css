@@ -1,0 +1,41 @@
+.recipe-list-img{
+  max-width: 100%;;
+}
+
+.separator{	
+  background-color: #F2F2F2;
+  /* text-transform: uppercase; */
+  padding: 15px 20px;
+  color: #4A4A4A;
+  border-bottom: 1px solid #4A4A4A;
+  margin-bottom: 1px;
+}
+
+.recipe-row{
+  position: relative;
+  color: white;
+  font-size: 15px;
+}
+
+.recciple-overlay {
+  bottom: 3px;
+  right: 0;
+  min-width: 150px;
+  padding: 5px 15px;
+  position: absolute;
+  background: rgba(0,0,0, 0.5);
+}
+.recciple-overlay p {
+  margin: 5px;
+}
+
+.recciple-overlay-title{
+  top: 0;
+  right: 0;
+  left:0;
+  font-size: 20px;
+  min-width: 150px;
+  padding: 15px 5px;
+  position: absolute;
+  background: rgba(0,0,0, 0.4);
+}
