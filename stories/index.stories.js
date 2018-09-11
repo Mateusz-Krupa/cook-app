@@ -25,11 +25,5 @@ storiesOf('Button', module)
   ));
 
 
-
-// storiesOf('MainNavigation', module)
-//   .add('normal', () => <Router><MainNavigation> </MainNavigation></Router>)
-// ));
-
-
 storiesOf('TopBar', module)
   .add('normal', () => <TopBar> Ble ble ble </TopBar>)
