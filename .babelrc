@@ -1,6 +1,6 @@
 {
   "presets": [
-    "next/babel"
+    "next"
   ],
   "plugins": [
     "@babel/plugin-transform-runtime",
