@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TopBar from '../../components/TopBar/TopBar';
-import Modal from 'react-modal';
+import IngredientsModal from './IngredientsModal';
 import './styles/Ingredients.css';
 export  default class Ingredients extends Component {
 
@@ -8,10 +8,10 @@ export  default class Ingredients extends Component {
   constructor(props){
     super(props);
     this.state = {
-      isModalVisible: true,
+      isModalVisible: false,
     };
     this.closeModal = this.closeModal.bind(this);
-    this.oepnModal = this.oepnModal.bind(this);
+    this.oepnModal = this.openModal.bind(this);
   }
 
   closeModal(){
@@ -22,7 +22,7 @@ export  default class Ingredients extends Component {
     )
   }
 
-  oepnModal(){
+  openModal(){
     this.setState(
       {
         isModalVisible: true
@@ -97,30 +97,11 @@ export  default class Ingredients extends Component {
           ))
         }
       </div>
-      <Modal
-          isOpen={this.state.isModalVisible}
-          onAfterOpen={this.afterOpenModal}
-          onRequestClose={this.closeModal}
-          style={customStyles}
-          contentLabel="Example Modal"
-        >
-        <div className="modal-container">
-          <div> Add Ingredients </div>
-          <div>
-            <ul>
-              <li>Fruits</li>
-              <li> Vegetables </li>
-              <li> Spises </li>
-              <li> ... </li>
-            </ul>  
-          </div>
-          <div>
-            <span className="modal-close__btn" onClick={this.closeModal}> 
-              <i className="fa fa-times" /> Close 
-            </span>
-          </div>
-        </div>
-        </Modal>
+      <p>{this.state.isModalVisible}</p>
+      <IngredientsModal 
+        isModalVisible={this.state.isModalVisible}
+        closeModal={this.closeModal}
+      />
       </div>
     );
   }
